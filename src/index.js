@@ -95,4 +95,4 @@ app.delete("/partners/:id", async (req, res) => {
   return res.json();
 });
 
-app.listen(process.env.PORT || 4000);
+app.listen(process.env.PORT || 3333);
