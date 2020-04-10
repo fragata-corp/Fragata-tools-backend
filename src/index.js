@@ -13,6 +13,7 @@ app.use(cors());
 mongoose
   .connect(process.env.MONGO_DB_URL, {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
   })
   .then()
   .catch(() => {
@@ -95,4 +96,4 @@ app.delete("/partners/:id", async (req, res) => {
   return res.json();
 });
 
-app.listen(process.env.PORT || 3333);
+app.listen(process.env.PORT || 4000);
